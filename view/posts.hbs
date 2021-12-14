@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Posts</title>
+
+</head>
+
+<body>
+    <div class="mid">
+    <div class="mid-container">
+
+      <div class="logo">
+        <span>
+          <img id="logo" src="./img/logo.png">
+        </span>
+
+        <a href="home" class="botaum">Sair</a>   
+
+        <div class="botao-lingua">
+          <img id="globo" src="./img/globo.png">
+          <select>
+            <option>Português</option>
+            <option>Inglês</option>
+          </select>
+        </div>
+      </div>
+
+    <div class="post">
+        <h1>Posts</h1> 
+    <div class="conteudos">
+        <form  action="posts" method="post" accept-charset="utf-8">  
+        <label for="content">Conteúdo</label>  
+        <input type="text" name = "content" value=""/>            
+        <input type="submit"  value="Adicionar &rarr;"/>
+
+    </form> 
+    
+    <form action="posts" method="get" accept-charset="utf-8">  
+        <label for="busca">Busca</label>
+        <input type="text" name = "busca" value=""/>
+        <input type="submit"  value="busca....">
+
+    </form>     
+
+
+    </div>
+       
+
+
+
+    <ul>
+        {{#posts}}
+         <li>{{content}}</li>
+        {{/posts}}
+    </ul>  
+
+    </div>
+
+
+
+    
+</body>
+
+</html>

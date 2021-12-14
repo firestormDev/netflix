@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Netflix Brasil - assistir séries online, assistir filmes online</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+<!--  header     -->
+  <div class="mid">
+    <div class="mid-container">
+
+      <div class="logo">
+        <span>
+          <img id="logo" src="./img/logo.png">
+        </span>
+
+        <a href="/home" class="botaum">Sair</a> 
+        <a href="posts" class="botaum">PostGet</a>     
+
+        <div class="botao-lingua">
+          <img id="globo" src="./img/globo.png">
+          <select>
+            <option>Português</option>
+            <option>Inglês</option>
+          </select>
+        </div>
+      </div>
+
+<!-- Main -->
+
+ <div class="login-div">
+            <form class="login">
+                <h1>Login</h1>
+                <div class="input-text">
+                    <input type="text" id="inputEmail" name="email" placeholder="Email" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                    <div class="warning-input" id="warningEmail">
+                        Entre com um endereço de email valido.
+                    </div>
+                </div>
+                
+                <div class="input-text">
+                    <input type="password" id="inputPassword" name="password" placeholder="Password" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                    <div class="warning-input" id="warningPassword">
+                        Sua senha deve conter pelo menos 3 dígitos.
+                    </div>
+                </div>
+                
+                <div>
+                    <button class="login-button">Login</button>
+                </div>
+                <div class="lembrar">
+                    <div>
+                        <input type="checkbox">
+                        <label class="color_text">Lembrar</label>
+                    </div>                    
+                </div>                
+                 <div class="novos-membros">
+                    Novo na Netflix? <a href="cadastro" class="cadastro-link">Cadastre-se</a>.
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+
+    
+
+</body>
+
+</html>

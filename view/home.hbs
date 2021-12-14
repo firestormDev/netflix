@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Netflix Brasil - assistir séries online, assistir filmes online</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+<!--  header     -->
+  <div class="mid">
+    <div class="mid-container">
+
+      <div class="logo">
+        <span>
+          <img id="logo" src="./img/logo.png">
+        </span>
+
+        <a href="login" class="botaum">Entrar</a>  
+        <a href="posts" class="botaum">PostGet</a>    
+
+        <div class="botao-lingua">
+          <img id="globo" src="./img/globo.png">
+          <select>
+            <option>Português</option>
+            <option>Inglês</option>
+          </select>
+        </div>
+      </div>
+
+<!--  main     -->
+      <div class="mid-cont">
+        <div class="mid-cont-interno">
+          <h1 class="title-main">Filmes, séries e muito<br /> mais. Sem limites.</h1>
+          <h2>Assista onde quiser. Cancele quando quiser.</h2>
+          <p> Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+          <div class="assinatura">
+            <form action="">
+              <input type="email" placeholder="Email" />
+              <div id="vamosLa">Vamos lá ></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- footer       -->
+    <div id="gradiente"></div>
+    <section class="section">
+      <div class="container">
+        <div class="grid">
+          <div>
+            <h1>Aproveite na TV.</h1>
+            <p>
+              Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple
+              TV,
+              aparelhos de Blu-ray e outros dispositivos.
+            </p>
+          </div>
+          <div class="img-tv">
+            <img src="img/tv.png" alt="TV">
+            <video class="video-tv" autoplay playinline muted loop>
+              <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</body>
+
+</html>
