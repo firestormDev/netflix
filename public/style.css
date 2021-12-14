@@ -24,12 +24,12 @@ img{
     
 }
 #vamosLa{    
-    margin-top: 5px;
+   
     display: grid;
     background-color: #e30813;
-    padding: 23px 10px;
+    padding: 22px 10px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 22px;
     min-height: 20px;
 }
 
