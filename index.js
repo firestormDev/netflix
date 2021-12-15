@@ -27,6 +27,10 @@ let http = require ('http'),
     app.get('/cadastro', (req, res) => {
         res.render('cadastro', { title: 'Página de cadastro'});
     });
+    app.get('/post', (req, res) => {
+        res.render('post', { title: 'Página de post'});
+    });
+    
     
 
     app.get('/mensagem_get', (req, res) => {
@@ -85,7 +89,7 @@ let http = require ('http'),
    
 
 
-    //app.listen(3000);
-    app.listen(process.env.PORT);
+    app.listen(3000);
+    //app.listen(process.env.PORT);
 
   
