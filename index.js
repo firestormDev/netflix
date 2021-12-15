@@ -12,7 +12,7 @@ let http = require ('http'),
     app.use(express.urlencoded({extended: false}));
     
 
-    app.get('/home', (req, res) => {
+    app.get('/', (req, res) => {
         res.render('home', { title: 'Página inicial'});
     });
 
