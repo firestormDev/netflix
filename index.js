@@ -78,11 +78,12 @@ let http = require ('http'),
         /*UploadImage.insert(image); 
         res.redirect('postsImagens'); */
 
-        app.post('/postsImages',  async (req, res) => {
+       app.post('/postsImagens',  async (req, res) => {
             const image = req.body.image;
             UploadImage.insert(image);   
             res.redirect('postsImagens');
         });  
+
 
     
             
