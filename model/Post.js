@@ -2,7 +2,7 @@
 
 const { MongoClient } = require('mongodb');
 //const uri = "mongodb+srv://protomania:<tinti8607>@leaflix-east.dvc2t.mongodb.net/leaflix-east?retryWrites=true&w=majority";
-const uri ="const uri = process.env.MONGODB_URI";
+const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
   const collection = client.db("test").collection("devices");
