@@ -90,7 +90,7 @@ app.post('/postsImagens', UploadImage.image, async (req, res) => {
 });  
 
 
-app.listen(3000); // dev
-// app.listen(process.env.PORT); //production
+// app.listen(3000); // dev
+app.listen(process.env.PORT); //production
 
   
